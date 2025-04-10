@@ -1,6 +1,42 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    overflow: hidden;
     height: 100%;
+    width: 100%;
+
+
 }
+
+.hero {
+    border: solid orange 1px;
+    padding: 0;
+}
+
+.backGroundVdo {
+    position: absolute;
+    
+    top: 0;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    border: solid red 1px;
+
+}
+
+
+ @media (min-aspect-ratio: 16/9) {
+    .backGroundVdo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .backGroundVdo {
+        width: auto;
+        height: 100%;
+    }
+} 
