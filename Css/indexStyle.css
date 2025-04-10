@@ -42,13 +42,14 @@
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
-
+     display: flex;
      width: 100%;
  }
 
  .Product {
      display: flex;
      justify-content: center;
+     align-items: center;
      margin-top: 30vh;
      margin-left: 20vh;
  }
@@ -98,49 +99,71 @@
      opacity: 1;
  }
 
- .Conten .Button {
-
+ .Button {
+     position: relative;
      display: flex;
      justify-content: center;
-     margin-top: 2vh;
+     align-items: center;
+   
+     padding: auto;
      width: auto;
+     /* border: solid red 1px; */
  }
 
- .Conten .Button img {
+ .Button img {
      width: 15vh;
  }
 
- .Conten .Button .Btn_Defualt {
+ .Button .Btn_Defualt {
      opacity: 1;
  }
 
- .Conten .Button .Btn_Press {
+ .Button .Btn_Press {
      position: absolute;
      opacity: 0;
 
  }
 
- .Conten .Button .Btn_Hover {
+ .Button .Btn_Hover {
      position: absolute;
      opacity: 0;
  }
 
- .Conten .Button:hover .Btn_Defualt {
+ .Button:hover .Btn_Defualt {
      opacity: 0;
  }
 
 
- .Conten .Button:hover .Btn_Hover {
+ .Button:hover .Btn_Hover {
      opacity: 1;
  }
 
- .Conten .Button:active .Btn_Press {
+ .Button:active .Btn_Press {
      opacity: 1;
  }
 
- .Conten .Button:active .Btn_Hover {
+ .Button:active .Btn_Hover {
      opacity: 0;
  }
+
+ .Button h3 {
+     position: absolute;
+     color: #284000;
+     top: 0%;
+     z-index: 2;
+     font-size: 1em;
+
+ }
+
+
+
+
+
+
+
+
+
+
 
 
  /*---------- Logo ----------*/
