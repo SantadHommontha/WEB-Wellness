@@ -16,7 +16,7 @@
  .hero {
      position: relative;
      width: 100%;
-     /* overflow: hidden; */
+     overflow: hidden;
      height: 100vh;
 
  }
@@ -78,8 +78,11 @@
  }
 
  .Conten .Images_Btn_Container {
-     display: flex;
+     display: grid;
+     grid-auto-flow: column;
+     gap: 5%;
      justify-content: space-between;
+
  }
 
  .Product_Container .Container .Service {
@@ -111,21 +114,30 @@
 
  .Product_Buttom_Container .Product_Buttom {
      display: flex;
+     justify-content: center;
 
-     border: solid purple 1px;
      width: 50%;
-
-    
- }
-
- .Product_Buttom_Container .Product_Buttom div:first-child {
-     border: solid red 1px;
-   
+     position: relative;
 
  }
 
- .Product_Buttom_Container .Product_Buttom div:last-child {
-     border: solid red 1px;
+
+
+ .Product_Buttom_Container .Product_Buttom .L {
+
+     position: absolute;
+     left: 50%;
+     transform: translateX(-90%);
+     width: 15vh;
+
+ }
+
+ .Product_Buttom_Container .Product_Buttom .R {
+
+     position: absolute;
+     right: 0;
+     transform: translateX(-50%);
+     width: 15vh;
 
  }
 
