@@ -94,35 +94,6 @@
  }
 
 
- .Image_Btn {
-     position: relative;
-     cursor: pointer;
- }
-
- .Image_Btn img {
-     display: block;
-     width: 15vh;
-     height: 100%;
- }
-
- .Default {
-     opacity: 1;
- }
-
- .Hover {
-     position: absolute;
-     top: 0;
-     left: 0;
-     opacity: 0;
- }
-
- .Image_Btn:hover .Default {
-     opacity: 0;
- }
-
- .Image_Btn:hover .Hover {
-     opacity: 1;
- }
 
  /* ---------- Button ----------*/
  .Buttom_Container {

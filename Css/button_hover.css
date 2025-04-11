@@ -1,0 +1,30 @@
+.Button {
+    position: relative;
+    cursor: pointer;
+}
+
+.Button img {
+    display: block;
+    width: 15vh;
+    height: 100%;
+}
+
+.Button .Default {
+    opacity: 1;
+}
+
+.Button .Hover {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+
+.Button:hover .Default {
+    opacity: 0;
+}
+
+.Button:hover .Hover {
+    opacity: 1;
+}
