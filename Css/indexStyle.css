@@ -77,7 +77,7 @@
  .Image_Btn img {
      display: block;
      width: 15vh;
-     height: 100%;
+     height: auto;
  }
 
  .Default {
