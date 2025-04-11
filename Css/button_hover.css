@@ -1,19 +1,19 @@
-.Button {
+.Image_Button {
     position: relative;
     cursor: pointer;
 }
 
-.Button img {
+.Image_Button img {
     display: block;
     width: 15vh;
     height: 100%;
 }
 
-.Button .Default {
+.Image_Button .Default {
     opacity: 1;
 }
 
-.Button .Hover {
+.Image_Button .Hover {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -21,10 +21,10 @@
 }
 
 
-.Button:hover .Default {
+.Image_Button:hover .Default {
     opacity: 0;
 }
 
-.Button:hover .Hover {
+.Image_Button:hover .Hover {
     opacity: 1;
 }
