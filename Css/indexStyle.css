@@ -21,7 +21,7 @@
 
  }
 
- /*---------- 1 Back Ground ----------*/
+ /* -------------------- 1 Back Ground -------------------- */
  .back_Ground_Vdo {
      position: absolute;
      top: 0;
@@ -30,9 +30,26 @@
      height: 100%;
      object-fit: cover;
      z-index: -1;
+    
  }
 
- /*---------- 3 Product ----------*/
+
+ /* -------------------- Logo -------------------- */
+ .Tmwta_Logo_Container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin-top: 1vh;
+     justify-content: center;
+ }
+
+ 
+
+
+
+
+
+ /* -------------------- 3 Product -------------------- */
  .Product_Container {
      position: absolute;
      top: 50%;
@@ -60,28 +77,29 @@
      width: 50%;
      height: 100%;
      position: relative;
+    
  }
 
 
  .Product_Container .Container .Product .Product_Left {
      position: absolute;
-     left: 20%;
-     top: 70%;
+     left: 18%;
+     top: 80%;
      transform: translateY(-50%);
  }
 
  .Product_Container .Container .Product .Product_Right {
+   
      position: absolute;
-     right: 0%;
-     top: 70%;
+     right: -10%;
+     top: 80%;
      transform: translateY(-50%);
  }
 
  .Conten .Images_Btn_Container {
      display: grid;
      grid-auto-flow: column;
-     gap: 5%;
-     justify-content: space-between;
+
 
  }
 
@@ -105,6 +123,8 @@
 
 
  }
+
+ /* -------------------- Product Button -------------------- */
 
  .Product_Buttom_Container {
      display: flex;
@@ -136,7 +156,7 @@
 
      position: absolute;
      right: 0;
-     transform: translateX(-50%);
+   
      width: 15vh;
 
  }
@@ -152,24 +172,9 @@
 
 
 
- /*---------- Logo ----------*/
- .Tmwta_Logo_Container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 1vh;
- }
-
- .Logo {
-     display: flex;
-
-     flex-direction: row;
-     align-items: center;
- }
 
 
-
- /*---------- 7 Conner ----------*/
+ /* -------------------- 7 Conner -------------------- */
  .conner {
      position: absolute;
      pointer-events: none;

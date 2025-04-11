@@ -1,11 +1,12 @@
 .Image_Button {
     position: relative;
     cursor: pointer;
+   
 }
 
 .Image_Button img {
     display: block;
-    width: 15vh;
+    width: 18vh;
     height: 100%;
 }
 
@@ -27,4 +28,5 @@
 
 .Image_Button:hover .Hover {
     opacity: 1;
+   
 }

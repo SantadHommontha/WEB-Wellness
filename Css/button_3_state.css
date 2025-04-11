@@ -1,56 +1,56 @@
 .Button {
-     position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-     padding: auto;
-     height: 6vh;
-     
+    padding: auto;
+    height: 6vh;
+
 }
 
- .Button img {
+.Button img {
     width: 100%;
     height: 100%;
- }
+}
 
- .Button .Btn_Defualt {
-     opacity: 1;
- }
+.Button .Btn_Defualt {
+    opacity: 1;
+}
 
- .Button .Btn_Press {
-     position: absolute;
-     opacity: 0;
+.Button .Btn_Press {
+    position: absolute;
+    opacity: 0;
 
- }
+}
 
- .Button .Btn_Hover {
-     position: absolute;
-     opacity: 0;
- }
+.Button .Btn_Hover {
+    position: absolute;
+    opacity: 0;
+}
 
- .Button:hover .Btn_Defualt {
-     opacity: 0;
- }
+.Button:hover .Btn_Defualt {
+    opacity: 0;
+}
 
 
- .Button:hover .Btn_Hover {
-     opacity: 1;
- }
+.Button:hover .Btn_Hover {
+    opacity: 1;
+}
 
- .Button:active .Btn_Press {
-     opacity: 1;
- }
+.Button:active .Btn_Press {
+    opacity: 1;
+}
 
- .Button:active .Btn_Hover {
-     opacity: 0;
- }
- .Button h3 {
+.Button:active .Btn_Hover {
+    opacity: 0;
+}
+
+.Button h3 {
     position: absolute;
     color: #284000;
-   
+    font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     font-size: 1em;
 
 }
-
