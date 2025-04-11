@@ -1,0 +1,98 @@
+.sidebar {
+    position: absolute;
+    right: 0;
+   
+    z-index: 3;
+    height: 50vh;
+    width: 40%;
+
+}
+
+
+
+
+.sidebar .Container {
+
+  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Button_sidebar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    height: 80px;
+    width: 400px;
+
+}
+
+.Button_sidebar img {
+    width: 100%;
+    height: 100%;
+}
+
+.Button_sidebar .Btn_Defualt {
+    opacity: 1;
+}
+
+.Button_sidebar .Btn_Press {
+    position: absolute;
+    opacity: 0;
+
+}
+
+.Button_sidebar .Btn_Hover {
+    position: absolute;
+    opacity: 0;
+}
+
+.Button_sidebar:hover .Btn_Defualt {
+    opacity: 0;
+}
+
+
+.Button_sidebar:hover .Btn_Hover {
+    opacity: 1;
+}
+
+.Button_sidebar:active .Btn_Press {
+    opacity: 1;
+}
+
+.Button_sidebar:active .Btn_Hover {
+    opacity: 0;
+}
+
+
+
+.Button_sidebar h3 {
+    position: absolute;
+    color: #284000;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    left: 20%;
+    font-size: 1em;
+
+}
+
+
+/* .Button_sidebar h3 {
+    position: absolute;
+    left: 0;
+    
+    color: #284000;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    font-size: 1em;
+
+} */
