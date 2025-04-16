@@ -2,7 +2,7 @@
 
 #Sidebar {
     position: absolute;
-    right: -100%;
+    right: -5%;
 
     z-index: 3;
     height: 50vh;
