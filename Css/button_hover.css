@@ -30,3 +30,12 @@
     opacity: 1;
    
 }
+
+Image_Button .Hover.Hover
+{
+    opacity: 1;
+}
+
+.Image_Button .Default.Hover {
+    opacity: 0;
+}
