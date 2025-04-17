@@ -1,7 +1,7 @@
 .Image_Button {
     position: relative;
     cursor: pointer;
-   border: solid red 1px;
+ /*  border: solid red 1px;*/
 }
 
 .Image_Button img {
