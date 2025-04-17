@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="Css/sidebar.css">
   
   <script src="Script/Brand_Frame.js"></script>
-  <script src="Script/side_Bar.js"></script>
+  
   <title>Wellness </title>
 </head>
 
@@ -90,7 +90,7 @@
 
         <div class="Service">
           <div class="House_Pop">
-            <div class="Image_Button">
+            <div onclick="SideBarToggle()" class="Image_Button">
               <img class="Default" src="Templete/house_pop_default.png">
               <img class="Hover" src="Templete/house_pop_hover.png">
             </div>
@@ -118,16 +118,16 @@
             </div>
           </div>
 
-
-        </div>
-        <div class="Service_Button">
-          <div class="Button" id="toggle_btn">
-            <h3>Services</h3>
-            <img class="Btn_Defualt" src="Templete/Button/btn_Default.png">
-            <img class="Btn_Press" src="Templete/Button/btn_Press.png">
-            <img class="Btn_Hover" src="Templete/Button/btn_Hover.png">
+          <div class="Service_Button">
+            <div class="Button" id="toggle_btn">
+              <h3>Services</h3>
+              <img class="Btn_Defualt" src="Templete/Button/btn_Default.png">
+              <img class="Btn_Press" src="Templete/Button/btn_Press.png">
+              <img class="Btn_Hover" src="Templete/Button/btn_Hover.png">
+            </div>
           </div>
         </div>
+       
 
 
       </div>
@@ -170,7 +170,7 @@
 
 
 
-    <!-- <div class="sidebar" id="Sidebar">
+    <div class="sidebar" id="Sidebar">
             <div class="Container">
 
                 <div class="Button_Container">
@@ -216,7 +216,7 @@
 
 
                 </div>
- -->
+
 
 
 
@@ -246,7 +246,7 @@
   </div>
 
 
-
+  <script src="Script/side_Bar.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,21 @@
-.sidebar {}
+
 
 #Sidebar {
-    position: absolute;
-    right: -5%;
+    position: fixed;
+    right: -40vw;
+  
 
     z-index: 3;
-    height: 50vh;
-    width: 40%;
-    transition: left 0.3s ease-in-out;
+   top: 50%;
+   transform: translateY(-25%);
+    width: 30vw;
+    transition: right 0.3s ease-in-out;
+   
 }
 
-#sidebar.open {
-    right: -5%;
-   
+#Sidebar.open {
+    right: 5%;
+ 
 }
 
 .sidebar .Container {
@@ -66,7 +69,7 @@
 
 
     height: 80px;
-    width: 500px;
+    width: 350px;
 
 }
 
@@ -145,7 +148,7 @@
 
 .Botton img:nth-child(1) {
     position: absolute;
-    left: 5%;
+    left: 0%;
     z-index: 1;
 }
 
