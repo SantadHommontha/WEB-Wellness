@@ -1,5 +1,5 @@
 function ShowIframe(url) {
-    if (Is_Side_Bar_Open) return;
+   
     if (url == "none") return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
@@ -9,6 +9,8 @@ function ShowIframe(url) {
 }
 function HideIframe() {
     let iFrame_Container = document.getElementById('iframeContainer');
+    let iFrame = document.getElementById('brandFrame');
+    iFrame.src = null;
     iFrame_Container.style.display = 'none';
 
 }
@@ -20,47 +22,66 @@ function HideIframe() {
 
 
 
+let Amazing_Thailand = document.getElementById('Amazing_Thailand');
+
+
+let FACILITATORS = document.getElementById('FACILITATORS');
+let WELLNESS_ESTATE = document.getElementById('WELLNESS_ESTATE');
+let WELLNESS_CENTER = document.getElementById('WELLNESS_CENTER');
+let WELLNESS_CLINIC = document.getElementById('WELLNESS_CLINIC');
 
 
 
 
+FACILITATORS.addEventListener('click', function () {
+    ShowIframe("none");
+})
+WELLNESS_ESTATE.addEventListener('click', function () {
+    ShowIframe("none");
+})
 
+WELLNESS_CENTER.addEventListener('click', function () {
+    ShowIframe("https://mousaiwellness.com/");
+    
+})
 
-
+WELLNESS_CLINIC.addEventListener('click', function () {
+    ShowIframe("none");
+})
 
 
 
 Tmwta_Logo.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://tmwta.com/");
 
-})
+});
 
 
 
 WolfiaX.addEventListener('click', function () {
-    ShowIframe('https://drwellnessx.com/')
-})
+    ShowIframe('https://drwellnessx.com/');
+});
 
 NIMNIM.addEventListener('click', function () {
-    ShowIframe('https://www.wikipedia.org/')
-})
+    ShowIframe('https://www.wikipedia.org/');
+});
 
 KHAOPLAWAAN.addEventListener('click', function () {
-    ShowIframe('https://linktr.ee/NeramitFoodtech')
-})
+    ShowIframe('https://linktr.ee/NeramitFoodtech');
+});
 
 WAFFENHUND.addEventListener('click', function () {
-    ShowIframe('none')
-})
+    ShowIframe('none');
+});
 
 PIMOL.addEventListener('click', function () {
-    ShowIframe('https://pimol.co.th/ppm/')
-})
+    ShowIframe('https://pimol.co.th/ppm/');
+});
 
 
-House_Button.addEventListener('click', function () {
-    ShowIframe('none')
-})
+Amazing_Thailand.addEventListener('click', function () {
+    ShowIframe('none');
+});
 
 
 
