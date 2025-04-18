@@ -28,12 +28,12 @@ function Product_UnActive(Product) {
 
 
 Tmwta_Logo.addEventListener('mouseover', function () {
-    console.log("Select Product 1");
+    console.log("Select Tmwta Logo");
     Product_Active(Tmwta_Logo);
 }
 )
 Tmwta_Logo.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 1");
+    console.log("UnSelect Tmwta Logo");
     Product_UnActive(Tmwta_Logo);
 }
 )
