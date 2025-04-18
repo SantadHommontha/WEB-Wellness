@@ -3,7 +3,7 @@
 
 
 
-
+let Is_Side_Bar_Open = false;
 
 function SideBarToggle() {
 
@@ -12,13 +12,13 @@ function SideBarToggle() {
 
     setTimeout(() => {
         sidebar.classList.toggle('open');
+        Is_Side_Bar_Open = true;
+        // let houseBtn = document.getElementById('House_Button')
+        // let allChild = houseBtn.children;
 
-        let houseBtn = document.getElementById('House_Button')
-        let allChild = houseBtn.children;
-
-        allChild[0].style.opacity = '0';
-        allChild[1].style.opacity = '0';
-        allChild[2].style.opacity = '1';
+        // allChild[0].style.opacity = '0';
+        // allChild[1].style.opacity = '0';
+        // allChild[2].style.opacity = '1';
 
     }, 0.1);
 
@@ -36,7 +36,7 @@ document.addEventListener('click', function (event) {
         if (sidebar.classList.contains('open')) {
             sidebar.classList.remove('open');
             console.log('close side bar');
-
+            Is_Side_Bar_Open = false
             let houseBtn = document.getElementById('House_Button')
             let allChild = houseBtn.children;
 
