@@ -34,10 +34,10 @@ let WELLNESS_CLINIC = document.getElementById('WELLNESS_CLINIC');
 
 
 FACILITATORS.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://visitasian.com/");
 })
 WELLNESS_ESTATE.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://www.klongtomheritage.com/");
 })
 
 WELLNESS_CENTER.addEventListener('click', function () {
@@ -46,7 +46,7 @@ WELLNESS_CENTER.addEventListener('click', function () {
 })
 
 WELLNESS_CLINIC.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://www.klosswellnessclinic.com/");
 })
 
 

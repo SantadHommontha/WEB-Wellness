@@ -1,12 +1,16 @@
+.Product_Container * {
+    border: solid red 1px;
+}
+
 .Image_Button {
     position: relative;
     cursor: pointer;
-  /* border: solid red 1px;*/ 
+
 }
 
 .Image_Button img {
     display: block;
-    width: 18vh;
+    width: 20vh;
     height: 100%;
 }
 
@@ -22,10 +26,14 @@
 }
 
 
-#WolfiaX
-{
+#WolfiaX {
     height: 150%;
-    
+    bottom: 50%;
+}
+
+#NIMNIM {
+    height: 110%;
+    bottom: 50%;
 }
 
 
@@ -46,5 +54,3 @@
     opacity: 1;
    
 } */
-
-
