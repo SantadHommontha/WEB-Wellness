@@ -1,0 +1,41 @@
+.Image_Button {
+    position: relative;
+    cursor: pointer;
+  /* border: solid red 1px;*/ 
+}
+
+.Image_Button img {
+    display: block;
+    width: 18vh;
+    height: 100%;
+}
+
+.Image_Button .Default {
+    opacity: 1;
+}
+
+.Image_Button .Hover {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+
+.Image_Button:hover .Default {
+    opacity: 0;
+}
+
+.Image_Button:hover .Hover {
+    opacity: 1;
+   
+}
+
+Image_Button .Hover.Hover
+{
+    opacity: 1;
+}
+
+.Image_Button .Default.Hover {
+    opacity: 0;
+}
