@@ -1,8 +1,5 @@
 
 
-
-
-
 let WolfiaX = document.getElementById('WolfiaX')
 let NIMNIM = document.getElementById('NIMNIM')
 let KHAOPLAWAAN = document.getElementById('KHAOPLAWAAN')
@@ -10,22 +7,37 @@ let WAFFENHUND = document.getElementById('WAFFENHUND')
 let PIMOL = document.getElementById('PIMOL')
 let House_Button = document.getElementById('House_Button')
 
-
+let Tmwta_Logo = document.getElementById('Tmwta_Logo');
 
 function Product_Active(Product) {
     if (Is_Side_Bar_Open) return;
-    let p1_child = Product.children;
-    p1_child[0].style.opacity = '0';
-    p1_child[1].style.opacity = '1';
-    p1_child[2].style.opacity = '1';
+    let allChild = Product.children;
+    if (allChild[0]) allChild[0].style.opacity = '0';
+    if (allChild[1]) allChild[1].style.opacity = '1';
+    let clone = allChild[1].cloneNode(true);
+    allChild[1].replaceWith(clone);
+    if (allChild[2]) allChild[2].style.opacity = '1';
 }
 
 function Product_UnActive(Product) {
-    let p1_child = Product.children;
-    p1_child[0].style.opacity = '1';
-    p1_child[1].style.opacity = '0';
-    p1_child[2].style.opacity = '0';
+    let allChild = Product.children;
+    if (allChild[0]) allChild[0].style.opacity = '1';
+    if (allChild[1]) allChild[1].style.opacity = '0';
+
+    if (allChild[2]) allChild[2].style.opacity = '0';
 }
+
+
+Tmwta_Logo.addEventListener('mouseover', function () {
+    console.log("Select Product 1");
+    Product_Active(Tmwta_Logo);
+}
+)
+Tmwta_Logo.addEventListener('mouseout', function () {
+    console.log("UnSelect Product 1");
+    Product_UnActive(Tmwta_Logo);
+}
+)
 
 
 
@@ -88,8 +100,8 @@ PIMOL.addEventListener('mouseout', function () {
 )
 
 House_Button.addEventListener('mouseover', function () {
-    console.log("Select Product House");
     if (Is_Side_Bar_Open) return;
+    console.log("Select Product House");
     let p1_child = House_Button.children;
     p1_child[0].style.opacity = '0';
     p1_child[1].style.opacity = '1';
@@ -97,8 +109,8 @@ House_Button.addEventListener('mouseover', function () {
 }
 )
 House_Button.addEventListener('mouseout', function () {
-    console.log("UnSelect Product Hose");
     if (Is_Side_Bar_Open) return;
+    console.log("UnSelect Product Hose");
     let p1_child = House_Button.children;
     p1_child[0].style.opacity = '1';
     p1_child[1].style.opacity = '0';
@@ -107,8 +119,8 @@ House_Button.addEventListener('mouseout', function () {
 )
 
 House_Button.addEventListener('click', function () {
-    console.log("UnSelect Product Hose");
     let p1_child = House_Button.children;
+    console.log("UnSelect Product Hose");
     p1_child[0].style.opacity = '0';
     p1_child[1].style.opacity = '0';
     p1_child[2].style.opacity = '1';
@@ -162,12 +174,20 @@ function Supplementary_UnSelect() {
 
 
 function Services_Select() {
-    Product_Active(House_Button);
+    if (Is_Side_Bar_Open) return;
+    let p1_child = House_Button.children;
+    p1_child[0].style.opacity = '0';
+    p1_child[1].style.opacity = '1';
+    p1_child[2].style.opacity = '0';
+
 
 }
 
 function Services_UnSelect() {
-    
-    Product_UnActive(House_Button);
 
+    if (Is_Side_Bar_Open) return;
+    let p1_child = House_Button.children;
+    p1_child[0].style.opacity = '1';
+    p1_child[1].style.opacity = '0';
+    p1_child[2].style.opacity = '0';
 }
