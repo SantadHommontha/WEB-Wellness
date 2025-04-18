@@ -4,6 +4,7 @@ let iFrame_Container;
 
 function ShowIframe(url) {
     if (Is_Side_Bar_Open) return;
+    if (url == null) return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
 

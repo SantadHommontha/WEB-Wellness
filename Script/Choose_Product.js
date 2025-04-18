@@ -14,8 +14,7 @@ function Product_Active(Product) {
     let allChild = Product.children;
     if (allChild[0]) allChild[0].style.opacity = '0';
     if (allChild[1]) allChild[1].style.opacity = '1';
-    let clone = allChild[1].cloneNode(true);
-    allChild[1].replaceWith(clone);
+   
     if (allChild[2]) allChild[2].style.opacity = '1';
 }
 
