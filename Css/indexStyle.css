@@ -11,6 +11,80 @@
 
  }
 
+ /*------------------------------------------------------------------ Line */
+ .Horizontal_line {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 100%;
+     display: grid;
+     grid-template-columns: auto;
+     height: 100%;
+     z-index: 10;
+     pointer-events: none;
+ }
+
+ .Horizontal_line div {
+     font-size: 1px;
+     background-color: red;
+     width: 100%;
+     height: 1px;
+     pointer-events: none;
+ }
+
+ .Horizontal_line_Center {
+     position: absolute;
+     z-index: 10;
+     width: 2px;
+     background-color: aqua;
+     height: 100%;
+     font-size: 10px;
+     top: 50%;
+     left: 50%;
+     pointer-events: none;
+     transform: translateX(-50%);
+     transform: translateY(-50%);
+ }
+
+
+
+ .vartical_Line {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 100%;
+     display: grid;
+     grid-auto-flow: column;
+     grid-template-columns: auto;
+     pointer-events: none;
+     height: 100%;
+     z-index: 10;
+ }
+
+ .vartical_Line div {
+     font-size: 1px;
+     background-color: red;
+     width: 1px;
+     height: 100%;
+     pointer-events: none;
+ }
+ .vartical_Line_Center {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    background-color: aqua;
+    height: 1px;
+    font-size: 10px;
+    top: 50%;
+    left: 0;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+
+
+
+
 
 
  .hero {
@@ -21,7 +95,7 @@
 
  }
 
- /* -------------------- 1 Back Ground -------------------- */
+ /*------------------------------------------------------------------ Back Ground */
  .back_Ground_Vdo {
      position: absolute;
      top: 0;
@@ -34,7 +108,7 @@
  }
 
 
- /* -------------------- Logo -------------------- */
+ /*------------------------------------------------------------------ Logo */
  .Tmwta_Logo_Container {
      display: flex;
      flex-direction: row;
@@ -45,11 +119,22 @@
 
 
 
+ /*------------------------------------------------------------------ Is Land */
 
+ .IsLand {
+     position: absolute;
+     left: 0;
+     top: 65%;
+     width: 60%;
+     transform: translateY(-50%);
+     border: solid orange 1px;
+ }
 
+ .IsLand .Container img {
+     width: 100%;
+ }
 
-
- /* -------------------- 3 Product -------------------- */
+ /*------------------------------------------------------------------  Product */
  .Product_Container {
      position: absolute;
      top: 55%;
@@ -129,7 +214,7 @@
 
  }
 
- /* -------------------- Product Button -------------------- */
+ /*------------------------------------------------------------------ Product Button */
 
  .Product_Buttom_Container {
      display: flex;
@@ -162,11 +247,11 @@
  .Product_Buttom_Container .Product_Buttom .R {
 
      position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+     left: 50%;
+     transform: translateX(-50%);
      border: solid orange 1px;
      width: 10vw;
-height: 15vh;
+     height: 15vh;
  }
 
  .Product_Buttom_Container .Product_Buttom .Service_Button {
@@ -185,7 +270,7 @@ height: 15vh;
 
 
 
- /*------------------------------------------------------------------ 7 Conner */
+ /*------------------------------------------------------------------ Conner */
  .conner {
      position: absolute;
      pointer-events: none;
@@ -237,21 +322,21 @@ height: 15vh;
      justify-content: center;
      align-items: center;
      z-index: 3;
-    
+
  }
 
  #brandFrame {
      width: 80vw;
      height: 80vh;
      border-radius: 10px;
-  
+
 
  }
 
  .Iframe_btn {
-    margin-top: 1%;
+     margin-top: 1%;
      width: 150px;
-    
+
  }
 
 
