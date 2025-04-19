@@ -10,6 +10,7 @@ let SideBarLink = false;
 function ShowIframe(url) {
 
     if (url == "none") return;
+    if(iframeShow) return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
 
@@ -71,11 +72,11 @@ WolfiaX.addEventListener('click', function () {
 });
 
 NIMNIM.addEventListener('click', function () {
-    ShowIframe('https://www.wikipedia.org/');
+    ShowIframe('https://www.nimnimnoodle.com/?srsltid=AfmBOooiyCmz0YERHc_A-y-BZjuVQKFwDYArIjGXDZH0q3sqqwRx5CsF');
 });
 
 KHAOPLAWAAN.addEventListener('click', function () {
-    ShowIframe('https://linktr.ee/NeramitFoodtech');
+    ShowIframe('https://neramitfood.tech/');
 });
 
 WAFFENHUND.addEventListener('click', function () {
