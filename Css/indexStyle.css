@@ -1,17 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
 
- body {
-     margin: 0;
-     padding: 0;
 
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
-     height: 100%;
-     width: 100%;
-     user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
-
- }
-
+}
 
 
 
@@ -19,134 +17,141 @@
 
 
 
- .hero {
-     position: relative;
-     width: 100%;
-     overflow: hidden;
-     height: 100vh;
 
- }
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
 
- /*------------------------------------------------------------------ Back Ground */
- .back_Ground_Vdo {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     z-index: -1;
+}
 
- }
+/*------------------------------------------------------------------ Back Ground */
+.back_Ground_Vdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 
-
- /*------------------------------------------------------------------ Logo */
- .Tmwta_Logo_Container {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     margin-top: 1vh;
-     justify-content: center;
- }
+}
 
 
+/*------------------------------------------------------------------ Logo */
+.Tmwta_Logo_Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    justify-content: center;
+}
 
- /*------------------------------------------------------------------ Is Land */
 
- .IsLand {
-     position: absolute;
-     left: 0;
-     top: 65%;
-     width: 60%;
-     transform: translateY(-50%);
-   
- }
 
- .IsLand .Container img {
-     width: 100%;
- }
+/*------------------------------------------------------------------ Is Land */
 
- /*------------------------------------------------------------------  Product */
+.IsLand {
+    position: absolute;
+    left: 0;
+    top: 65%;
+    width: 60%;
+    transform: translateY(-50%);
 
- .Product_Container {
-     position: absolute;
-     top: 50%;
-    
-     left: 50%;
-     transform: translate(-50%, -50%);
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     width: 100%;
- }
+}
 
- .Product_Container .Container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin-top: 5vh;
-     width: 100%;
-     height: 30vh;
- }
+.IsLand .Container img {
+    width: 100%;
+}
 
- /* .Product_Buttom {
+/*------------------------------------------------------------------  Product */
+
+.Product_Container {
+    position: absolute;
+    top: 50%;
+
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.Product_Container .Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    width: 100%;
+    height: 30vh;
+}
+
+/* .Product_Buttom {
      border: solid red 1px; 
  } */
 
- .Product_Container .Container .Product {
-     display: flex;
-     justify-content: center;
+.Product_Container .Container .Product {
+    display: flex;
+    justify-content: center;
 
-     width: 50%;
-     height: 100%;
-     position: relative;
+    width: 50%;
+    height: 100%;
+    position: relative;
 
- }
-
-
- .Product_Container .Container .Product .Product_Left {
-     position: absolute;
-     left: 18%;
-     top: 80%;
-     transform: translateY(-50%);
- }
-
- .Product_Container .Container .Product .Product_Right {
-
-     position: absolute;
-     right: -10%;
-     top: 80%;
-     transform: translateY(-50%);
- }
-
- .Conten .Images_Btn_Container {
-     display: grid;
-     grid-auto-flow: column;
+}
 
 
- }
+.Product_Container .Container .Product .Product_Left {
+    position: absolute;
+    left: 18%;
+    bottom: 0;
+}
 
- .Product_Container .Container .Service {
-     height: 100%;
-     width: 50%;
-     position: relative;
- }
+.Product_Container .Container .Product .Product_Right {
 
- .Product_Container .Container .Service .House_Pop {
-     left: 60%;
-     top: 40%;
-     transform: translate(-50%, -30%);
-     position: absolute;
-     width: 80%;
- }
+    position: absolute;
+    right: -10%;
 
+    bottom: 0;
 
- .Product_Container .Container .Service .House_Pop .Image_Button img {
-     width: 90%;
+}
+
+.Conten .Images_Btn_Container {
+    display: grid;
+    grid-auto-flow: column;
 
 
- }
- .Product_Container .Container .Service .House_Pop .Image_Button .active {
+}
+
+.Product_Container .Container .Service {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.Product_Container .Container .Service .House_Pop {
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 80%;
+}
+
+.Product_Container .Container .Service .House_Pop .Image_Button {
+    transform: translateY(10%);
+
+}
+
+
+.Product_Container .Container .Service .House_Pop .Image_Button img {
+    width: 90%;
+
+
+}
+
+.Product_Container .Container .Service .House_Pop .Image_Button .active {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -155,137 +160,135 @@
 
 }
 
- /*------------------------------------------------------------------ Product Button */
+/*------------------------------------------------------------------ Product Button */
 
- .Product_Buttom_Container {
-     display: flex;
-     justify-content: center;
-     position: relative;
+.Product_Buttom_Container {
+    display: flex;
+    justify-content: center;
+    position: relative;
 
- }
+}
 
- .Product_Buttom_Container .Product_Buttom {
-     display: flex;
-     justify-content: center;
+.Product_Buttom_Container .Product_Buttom {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    width: 70%;
 
-     width: 70%;
-
-     position: relative;
-     
-
- }
+    position: relative;
 
 
-
- .Product_Buttom_Container .Product_Buttom .L {
-
-     position: absolute;
-     left: 3%;
-
-     margin-top: 6%;
-     width: 10vw;
-
- }
-
- .Product_Buttom_Container .Product_Buttom .R {
-
-     position: absolute;
-     left: 45%;
-     margin-top: 6%;
-     transform: translateX(-50%);
-    
-     width: 10vw;
-     height: 15vh;
- }
-
- .Product_Buttom_Container .Product_Buttom .Service_Button {
-
-     position: absolute;
-     margin-top: 6%;
-     justify-content: center;
-     width: 10vw;
-
-     right: 8%;
- }
+}
 
 
 
+.Product_Buttom_Container .Product_Buttom .L {
 
+    position: absolute;
+    left: 3%;
 
+    margin-top: 0%;
+    width: 10vw;
 
+}
 
- /*------------------------------------------------------------------ Conner */
- .conner {
-     position: absolute;
-     pointer-events: none;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     z-index: 2;
- }
+.Product_Buttom_Container .Product_Buttom .R {
 
- .conner img {
-     position: absolute;
-     max-width: 80vh;
- }
+    position: absolute;
+    left: 45%;
+    margin-top: 0%;
+    transform: translateX(-50%);
 
- .Top_Left {
-     top: 0;
-     left: 0;
- }
+    width: 10vw;
+    height: 15vh;
+}
 
- .Top_Right {
-     top: 0;
-     right: 0;
- }
+.Product_Buttom_Container .Product_Buttom .Service_Button {
 
- .Bottom_Left {
-     bottom: 0;
-     left: 0;
- }
+    position: absolute;
+    margin-top: 0%;
+    justify-content: center;
+    width: 10vw;
 
- .Bottom_Right {
-     bottom: 0;
-     right: 0;
- }
+    right: 8%;
+}
 
 
 
 
 
 
- /*------------------------------------------------------------------ IFrame */
- #iframeContainer {
-     display: none;
-     position: absolute;
-     flex-direction: column;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
-     justify-content: center;
-     align-items: center;
-     z-index: 3;
 
- }
+/*------------------------------------------------------------------ Conner */
+.conner {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
 
- #brandFrame {
-     width: 80vw;
-     height: 80vh;
-     border-radius: 10px;
+.conner img {
+    position: absolute;
+    max-width: 80vh;
+}
+
+.Top_Left {
+    top: 0;
+    left: 0;
+}
+
+.Top_Right {
+    top: 0;
+    right: 0;
+    width: 30vw;
+}
+
+.Bottom_Left {
+    bottom: 0;
+    left: 0;
+}
+
+.Bottom_Right {
+    bottom: 0;
+    right: 0;
+    width: 30vw;
+}
 
 
- }
-
- .Iframe_btn {
-     margin-top: 1%;
-     width: 150px;
-
- }
 
 
 
 
+/*------------------------------------------------------------------ IFrame */
+#iframeContainer {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+
+#brandFrame {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+
+
+}
+
+.Iframe_btn {
+    margin-top: 1%;
+    width: 150px;
+
+}
 
 
 
@@ -296,16 +299,20 @@
 
 
 
- @media (min-aspect-ratio: 16/9) {
-     .back_Ground_Vdo {
-         width: 100%;
-         height: auto;
-     }
- }
 
- @media (max-aspect-ratio: 16/9) {
-     .back_Ground_Vdo {
-         width: auto;
-         height: 100%;
-     }
- }
+
+
+
+@media (min-aspect-ratio: 16/9) {
+    .back_Ground_Vdo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back_Ground_Vdo {
+        width: auto;
+        height: 100%;
+    }
+}
