@@ -68,10 +68,10 @@ body {
     top: 0;
 }
 
-.Amazing_Thai
-{
+.Amazing_Thai {
     position: relative;
 }
+
 .Amazing_Thai .Hover {
     position: absolute;
     left: 0;
@@ -157,16 +157,16 @@ body {
     height: 100%;
     width: 50%;
     position: relative;
-   
+
 }
 
 .Product_Container .Container .Service .House_Pop {
-   right: 0;
+    right: 0;
     bottom: 0;
     transform: translateX(10%);
     position: absolute;
     width: 80%;
-   
+
 }
 
 .Product_Container .Container .Service .House_Pop .Image_Button {
@@ -218,6 +218,7 @@ body {
     left: 5%;
 
     margin-top: 0%;
+    height: 10vh;
     width: 10vw;
 
 }
@@ -228,9 +229,9 @@ body {
     left: 45%;
     margin-top: 0%;
     transform: translateX(-50%);
-
+    height: 10vh;
     width: 10vw;
-    height: 15vh;
+
 }
 
 .Product_Buttom_Container .Product_Buttom .Service_Button {
@@ -238,6 +239,7 @@ body {
     position: absolute;
     margin-top: 0%;
     justify-content: center;
+    height: 10vh;
     width: 10vw;
 
     right: 8%;
