@@ -24,9 +24,24 @@ function Product_Active(Product) {
     if (allChild[2]) allChild[2].style.opacity = '1';
 }
 
-function Product_UnActive(Product) {
-    let allChild = Product.children;
+function Product_Active(Product, b) {
+    if (Is_Side_Bar_Open) return;
     if (!Product) return;
+    let allChild = Product.children;
+    if (allChild[0]) allChild[0].style.opacity = '0';
+    if (allChild[1]) {
+        allChild[1].src = NewSrc(allChild[1].src);
+        allChild[1].style.opacity = '1';
+    }
+
+    if (allChild[2]) allChild[2].style.opacity = '1';
+}
+
+
+function Product_UnActive(Product) {
+    if (!Product) return;
+    let allChild = Product.children;
+  
     if (allChild[0]) allChild[0].style.opacity = '1';
     if (allChild[1]) allChild[1].style.opacity = '0';
 
@@ -228,6 +243,9 @@ House_Button.addEventListener('mouseover', function () {
     p1_child[0].style.opacity = '0';
     p1_child[1].style.opacity = '1';
     p1_child[2].style.opacity = '0';
+
+
+
 }
 )
 House_Button.addEventListener('mouseout', function () {
@@ -261,9 +279,9 @@ function NewSrc(currentSrc) {
 
 function SuperFood_Select() {
 
-    Product_Active(WolfiaX);
-    Product_Active(NIMNIM);
-    Product_Active(KHAOPLAWAAN);
+    Product_Active(WolfiaX,1);
+    Product_Active(NIMNIM,1);
+    Product_Active(KHAOPLAWAAN,1);
 
 }
 
@@ -278,9 +296,9 @@ function SuperFood_UnSelect() {
 
 function Supplementary_Select() {
 
-    Product_Active(WAFFENHUND);
-    Product_Active(PIMOL);
-    Product_Active(ProductX);
+    Product_Active(WAFFENHUND,1);
+    Product_Active(PIMOL,1);
+    Product_Active(ProductX,1);
 }
 
 

@@ -57,6 +57,7 @@ body {
 #Tmwta_Logo {
     height: 80%;
     position: relative;
+    cursor: pointer;
 }
 
 #Tmwta_Logo img {
@@ -89,7 +90,7 @@ body {
 .Amazing_Thai {
     position: relative;
     opacity: 1;
-
+    cursor: pointer;
 }
 
 
@@ -341,12 +342,15 @@ body {
     font-family: "Geologica", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
+    background-color: #7de9861c;
+    width: 100vw;
+    height: 100vh;
+
 }
 
 #brandFrame {
     width: 90vw;
-    height: 90vh;
+    height: 85vh;
     border-radius: 10px;
     background: linear-gradient(to bottom, #b4dbe7, #15c6d6);
 
@@ -358,10 +362,61 @@ body {
 
 }
 
+#Ifram_Bottom {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    width: 90vw;
+    position: relative;
+    /* justify-content: space-between; */
+   
 
 
+}
 
 
+.Iframe_btn {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translateX(50%);
+   
+}
+
+#Iframe_Bottom_logo {
+    /* position: relative;
+    left: 50%; */
+    display: inline-block;
+}
+
+#Ifram_Bottom #Iframe_Bottom_logo img:nth-child(1) {
+    width: 5vw;
+    height: 100%;
+}
+
+#Ifram_Bottom #Iframe_Bottom_logo img:nth-child(2) {
+    width: 11vw;
+    height: 100%;
+}
+
+#Iframe_Bottom_Ex {
+  
+    position: absolute;
+    right: 2%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#EX_Container {}
+
+#EX_Container h3 {
+    font-size: 1.5em;
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #284000;
+}
 
 
 

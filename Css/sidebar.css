@@ -49,6 +49,11 @@
     left: 15%;
 }
 
+.sidebar .Container #Button_Container2 .Button_sidebar h3 {
+ margin-left: -5%;
+}
+
+
 .sidebar .Container #Button_Container2 img:nth-child(1){
     width: 110px;
     height: 156px;
