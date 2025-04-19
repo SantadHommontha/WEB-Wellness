@@ -16,6 +16,7 @@ let Amazing_Thailand = document.getElementById('Amazing_Thailand');
 
 function Product_Active(Product) {
     if (Is_Side_Bar_Open) return;
+    if(!Product) return;
     let allChild = Product.children;
     if (allChild[0]) allChild[0].style.opacity = '0';
     if (allChild[1]) allChild[1].style.opacity = '1';
@@ -25,6 +26,7 @@ function Product_Active(Product) {
 
 function Product_UnActive(Product) {
     let allChild = Product.children;
+    if(!Product) return;
     if (allChild[0]) allChild[0].style.opacity = '1';
     if (allChild[1]) allChild[1].style.opacity = '0';
 

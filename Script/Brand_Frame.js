@@ -1,7 +1,11 @@
 let SuperFood = document.getElementById('Super_Food');
-let Supplementary  = document.getElementById('Supplementary');
+let Supplementary = document.getElementById('Supplementary');
 let Medical = document.getElementById('toggle_btn');
 
+let Ifram_Back_Btn = document.getElementById('Ifram_Back_Btn');
+
+let iframeShow = false;
+let SideBarLink = false;
 
 function ShowIframe(url) {
 
@@ -11,6 +15,9 @@ function ShowIframe(url) {
 
     iFrame.src = url;
     iFrame_Container.style.display = 'flex';
+
+    iframeShow = true;
+
     SuperFood.classList.add('SideBarOpen');
     Supplementary.classList.add('SideBarOpen');
     Medical.classList.add('SideBarOpen');
@@ -18,15 +25,21 @@ function ShowIframe(url) {
 function HideIframe() {
     let iFrame_Container = document.getElementById('iframeContainer');
     let iFrame = document.getElementById('brandFrame');
-    iFrame.src = null;
+    iFrame.src = "";
     iFrame_Container.style.display = 'none';
+
+    iframeShow = false;
+
     SuperFood.classList.remove('SideBarOpen');
     Supplementary.classList.remove('SideBarOpen');
     Medical.classList.remove('SideBarOpen');
+
+    
 }
 
-
-
+Ifram_Back_Btn.addEventListener('click', function () {
+    HideIframe();
+})
 
 
 
@@ -84,19 +97,26 @@ PIMOL.addEventListener('click', function () {
 //------------------------------------------------------------------------------------------------- Side Bar
 FACILITATORS.addEventListener('click', function () {
     ShowIframe("none");
+    SideBarLink = true;
 })
 WELLNESS_ESTATE.addEventListener('click', function () {
     ShowIframe("none");
+    SideBarLink = true;
 })
 
 WELLNESS_CENTER.addEventListener('click', function () {
     ShowIframe("https://mousaiwellness.com/");
-
+    SideBarLink = true;
 })
 
 WELLNESS_CLINIC.addEventListener('click', function () {
     ShowIframe("none");
+    SideBarLink = true;
 })
 
 
+
+
+// let IframeShow = iframeShow;
+// export { IframeShow };
 
