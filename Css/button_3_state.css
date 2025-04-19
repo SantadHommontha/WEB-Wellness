@@ -46,10 +46,10 @@
     opacity: 0;
 }
 
-.Button h3:nth-child(1) {
+.Button h3 {
     position: absolute;
     color: #284000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Geologica", sans-serif;
     z-index: 2;
     font-size: 1.5em;
 
@@ -83,7 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: solid red 1px; */
+   
     padding: auto;
     height: 100%;
 
@@ -93,19 +93,23 @@
 .Service_Button_In .Text {
     position: absolute;
     z-index: 1;
+    color: #284000;
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .Service_Button_In .Text h3:nth-child(1) {
     margin-bottom: 0;
-   position: relative;
-   left: 50%;
-   transform: translateX(-25%);
-  
+    position: relative;
+    left: 50%;
+    transform: translateX(-25%);
+
 }
 
 .Service_Button_In .Text h3:nth-child(2) {
     margin-top: 0;
-   
+
     font-size: 1.5em;
 }
 
@@ -142,11 +146,3 @@
 .Service_Button:hover .Btn_Hover {
     opacity: 1;
 }
-
-/* .Service_Button:active .Btn_Press {
-    opacity: 1;
-}
-
-.Service_Button:active .Btn_Hover {
-    opacity: 0;
-}  */

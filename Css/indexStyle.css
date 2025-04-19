@@ -219,7 +219,7 @@ body {
 
     margin-top: 0%;
     height: 10vh;
-    width: 10vw;
+    width: 12vw;
 
 }
 
@@ -230,7 +230,7 @@ body {
     margin-top: 0%;
     transform: translateX(-50%);
     height: 10vh;
-    width: 10vw;
+    width: 12vw;
 
 }
 
@@ -240,7 +240,7 @@ body {
     margin-top: 0%;
     justify-content: center;
     height: 10vh;
-    width: 10vw;
+    width: 12vw;
 
     right: 8%;
 }
@@ -306,7 +306,9 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
-
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #brandFrame {

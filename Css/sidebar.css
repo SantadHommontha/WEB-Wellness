@@ -154,7 +154,9 @@
 .Button_sidebar h3 {
     position: absolute;
     color: #284000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     z-index: 2;
     left: 20%;
     font-size: 2em;
