@@ -46,9 +46,27 @@ body {
     align-items: center;
     margin-top: 1vh;
     justify-content: center;
+    width: 60vw;
+    height: 30vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+#Tmwta_Logo {
+    height: 80%;
+    position: relative;
+}
 
+#Tmwta_Logo img {
+    height: 100%;
+}
+
+#Tmwta_Logo .Hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 /*------------------------------------------------------------------ Is Land */
 
@@ -243,7 +261,7 @@ body {
 .Top_Right {
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 25vw;
 }
 
 .Bottom_Left {
@@ -254,7 +272,7 @@ body {
 .Bottom_Right {
     bottom: 0;
     right: 0;
-    width: 30vw;
+    width: 25vw;
 }
 
 
