@@ -33,10 +33,10 @@
 .sidebar .Container #Button_Container1 {
     position: relative;
 
-    left: 30%;
+    /* left: 30%; */
 }
 
-.sidebar .Container #Button_Container1 .G img
+/* .sidebar .Container #Button_Container1 .G img
 {
     width: 3vw;
     height: 9vh;
@@ -47,9 +47,9 @@
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
-.sidebar .Container #Button_Container1 .G img:nth-child(1)
+/* .sidebar .Container #Button_Container1 .G img:nth-child(1)
 {
     position: relative;
     top: 0;
@@ -62,18 +62,18 @@
    
     left: -15%;
     transform: rotateZ(-10deg);
-}
+} */
 
 
 
 
 
-.sidebar .Container #Button_Container2 {
+/* .sidebar .Container #Button_Container2 {
     position: relative;
     left: 15%;
     
 }
-
+ */
 
 
 

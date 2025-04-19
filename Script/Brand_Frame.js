@@ -34,7 +34,7 @@ function HideIframe() {
     Supplementary.classList.remove('SideBarOpen');
     Medical.classList.remove('SideBarOpen');
 
-    
+
 }
 
 Ifram_Back_Btn.addEventListener('click', function () {
@@ -48,10 +48,7 @@ Ifram_Back_Btn.addEventListener('click', function () {
 // let Amazing_Thailand = document.getElementById('Amazing_Thailand');
 
 
-let FACILITATORS = document.getElementById('FACILITATORS');
-let WELLNESS_ESTATE = document.getElementById('WELLNESS_ESTATE');
-let WELLNESS_CENTER = document.getElementById('WELLNESS_CENTER');
-let WELLNESS_CLINIC = document.getElementById('WELLNESS_CLINIC');
+
 
 //------------------------------------------------------------------------------------------------- Logo
 Tmwta_Logo.addEventListener('click', function () {
@@ -95,23 +92,34 @@ PIMOL.addEventListener('click', function () {
 
 
 //------------------------------------------------------------------------------------------------- Side Bar
+
+let FACILITATORS = document.getElementById('FACILITATORS');
+let WELLNESS_ESTATE = document.getElementById('WELLNESS_ESTATE');
+let WELLNESS_CENTER = document.getElementById('WELLNESS_CENTER');
+let WELLNESS_CLINIC = document.getElementById('WELLNESS_CLINIC');
+
+
 FACILITATORS.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://visitasian.com/");
     SideBarLink = true;
+    console.log("FACILITATORS");
 })
 WELLNESS_ESTATE.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://www.klongtomheritage.com/");
     SideBarLink = true;
+    console.log("WELLNESS_ESTATE");
 })
 
 WELLNESS_CENTER.addEventListener('click', function () {
     ShowIframe("https://mousaiwellness.com/");
     SideBarLink = true;
+    console.log("WELLNESS_CENTER");
 })
 
 WELLNESS_CLINIC.addEventListener('click', function () {
-    ShowIframe("none");
+    ShowIframe("https://www.klosswellnessclinic.com/");
     SideBarLink = true;
+    console.log("WELLNESS_CLINIC");
 })
 
 
