@@ -1,5 +1,5 @@
 function ShowIframe(url) {
-   
+
     if (url == "none") return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
@@ -22,7 +22,7 @@ function HideIframe() {
 
 
 
-let Amazing_Thailand = document.getElementById('Amazing_Thailand');
+// let Amazing_Thailand = document.getElementById('Amazing_Thailand');
 
 
 let FACILITATORS = document.getElementById('FACILITATORS');
@@ -30,34 +30,22 @@ let WELLNESS_ESTATE = document.getElementById('WELLNESS_ESTATE');
 let WELLNESS_CENTER = document.getElementById('WELLNESS_CENTER');
 let WELLNESS_CLINIC = document.getElementById('WELLNESS_CLINIC');
 
-
-
-
-FACILITATORS.addEventListener('click', function () {
-    ShowIframe("none");
-})
-WELLNESS_ESTATE.addEventListener('click', function () {
-    ShowIframe("none");
-})
-
-WELLNESS_CENTER.addEventListener('click', function () {
-    ShowIframe("https://mousaiwellness.com/");
-    
-})
-
-WELLNESS_CLINIC.addEventListener('click', function () {
-    ShowIframe("none");
-})
-
-
-
+//------------------------------------------------------------------------------------------------- Logo
 Tmwta_Logo.addEventListener('click', function () {
     ShowIframe("https://tmwta.com/");
 
 });
 
+Amazing_Thailand.addEventListener('click', function () {
+    ShowIframe("https://tmwta.com/");
+});
 
 
+
+
+
+
+//------------------------------------------------------------------------------------------------- Product Button
 WolfiaX.addEventListener('click', function () {
     ShowIframe('https://drwellnessx.com/');
 });
@@ -79,10 +67,23 @@ PIMOL.addEventListener('click', function () {
 });
 
 
-Amazing_Thailand.addEventListener('click', function () {
-    ShowIframe('none');
-});
 
+//------------------------------------------------------------------------------------------------- Side Bar
+FACILITATORS.addEventListener('click', function () {
+    ShowIframe("none");
+})
+WELLNESS_ESTATE.addEventListener('click', function () {
+    ShowIframe("none");
+})
+
+WELLNESS_CENTER.addEventListener('click', function () {
+    ShowIframe("https://mousaiwellness.com/");
+
+})
+
+WELLNESS_CLINIC.addEventListener('click', function () {
+    ShowIframe("none");
+})
 
 
 

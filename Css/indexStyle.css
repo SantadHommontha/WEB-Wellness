@@ -68,11 +68,21 @@ body {
     top: 0;
 }
 
+.Amazing_Thai
+{
+    position: relative;
+}
+.Amazing_Thai .Hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 /*------------------------------------------------------------------ Is Land */
 
 .IsLand {
     position: absolute;
-    left: 0;
+    left: 2%;
     top: 65%;
     width: 60%;
     transform: translateY(-50%);
@@ -90,7 +100,7 @@ body {
     top: 50%;
 
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -20%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,14 +157,16 @@ body {
     height: 100%;
     width: 50%;
     position: relative;
+   
 }
 
 .Product_Container .Container .Service .House_Pop {
-    left: 60%;
+   right: 0;
     bottom: 0;
-    transform: translateX(-50%);
+    transform: translateX(10%);
     position: absolute;
     width: 80%;
+   
 }
 
 .Product_Container .Container .Service .House_Pop .Image_Button {
@@ -203,7 +215,7 @@ body {
 .Product_Buttom_Container .Product_Buttom .L {
 
     position: absolute;
-    left: 3%;
+    left: 5%;
 
     margin-top: 0%;
     width: 10vw;
@@ -267,6 +279,7 @@ body {
 .Bottom_Left {
     bottom: 0;
     left: 0;
+    width: 40vw;
 }
 
 .Bottom_Right {

@@ -8,6 +8,10 @@ let PIMOL = document.getElementById('PIMOL')
 let House_Button = document.getElementById('House_Button')
 
 let Tmwta_Logo = document.getElementById('Tmwta_Logo');
+let Amazing_Thailand = document.getElementById('Amazing_Thailand');
+
+
+
 
 function Product_Active(Product) {
     if (Is_Side_Bar_Open) return;
@@ -35,6 +39,17 @@ Tmwta_Logo.addEventListener('mouseover', function () {
 Tmwta_Logo.addEventListener('mouseout', function () {
     console.log("UnSelect Tmwta Logo");
     Product_UnActive(Tmwta_Logo);
+}
+)
+
+Amazing_Thailand.addEventListener('mouseover', function () {
+    console.log("Select Tmwta Logo");
+    Product_Active(Amazing_Thailand);
+}
+)
+Amazing_Thailand.addEventListener('mouseout', function () {
+    console.log("UnSelect Tmwta Logo");
+    Product_UnActive(Amazing_Thailand);
 }
 )
 
