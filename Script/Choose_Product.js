@@ -114,18 +114,18 @@ PIMOL.addEventListener('mouseout', function () {
 }
 )
 
-ProductX.addEventListener('mouseover', function () {
-    console.log("Select Product 6");
-    Product_Active(ProductX);
-}
-)
+// ProductX.addEventListener('mouseover', function () {
+//     console.log("Select Product 6");
+//     Product_Active(ProductX);
+// }
+// )
 
 
-ProductX.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 6");
-    Product_UnActive(ProductX);
-}
-)
+// ProductX.addEventListener('mouseout', function () {
+//     console.log("UnSelect Product 6");
+//     Product_UnActive(ProductX);
+// }
+// )
 
 House_Button.addEventListener('mouseover', function () {
     if (Is_Side_Bar_Open) return;
@@ -186,7 +186,7 @@ function Supplementary_Select() {
 
     Product_Active(WAFFENHUND);
     Product_Active(PIMOL);
-
+    Product_Active(ProductX);
 }
 
 
@@ -196,7 +196,7 @@ function Supplementary_UnSelect() {
 
     Product_UnActive(WAFFENHUND);
     Product_UnActive(PIMOL);
-
+    Product_UnActive(ProductX)
 }
 
 

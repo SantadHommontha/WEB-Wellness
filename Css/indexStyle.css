@@ -44,13 +44,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 2%;
     justify-content: center;
     width: 60vw;
-    height: 30vh;
+    height: 20vh;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 #Tmwta_Logo {
@@ -60,7 +61,18 @@ body {
 
 #Tmwta_Logo img {
     height: 100%;
+
 }
+
+.Amazing_Thai img {
+
+    width: 80%;
+
+}
+
+
+
+
 
 #Tmwta_Logo .Hover {
     position: absolute;
@@ -96,13 +108,13 @@ body {
 }
 
 
-/*------------------------------------------------------------------ Is Land */
+/*------------------------------------------------------------------ IsLand */
 
 .IsLand {
     position: absolute;
-    left: 2%;
+    left: 6%;
     top: 65%;
-    width: 60%;
+    width: 50%;
     transform: translateY(-50%);
 
 }
@@ -118,7 +130,7 @@ body {
     top: 50%;
 
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -25%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,14 +164,14 @@ body {
     position: absolute;
     left: 13%;
     bottom: 0;
-  
+
 }
 
 .Product_Container .Container .Product .Product_Right {
 
     position: absolute;
-    right: 0;
-  
+    right: 10%;
+
     bottom: 0;
 
 }
@@ -175,7 +187,7 @@ body {
     height: 100%;
     width: 40%;
     position: relative;
-   
+
 }
 
 .Product_Container .Container .Service .House_Pop {
@@ -207,6 +219,8 @@ body {
 
 
 }
+
+
 
 /*------------------------------------------------------------------ Product Button */
 
@@ -246,7 +260,7 @@ body {
     position: absolute;
     left: 50%;
     margin-top: 0%;
-    transform: translateX(-70%);
+    transform: translateX(-85%);
     height: 10vh;
     width: 12vw;
 

@@ -1,3 +1,8 @@
+let SuperFood = document.getElementById('Super_Food');
+let Supplementary  = document.getElementById('Supplementary');
+let Medical = document.getElementById('toggle_btn');
+
+
 function ShowIframe(url) {
 
     if (url == "none") return;
@@ -6,13 +11,18 @@ function ShowIframe(url) {
 
     iFrame.src = url;
     iFrame_Container.style.display = 'flex';
+    SuperFood.classList.add('SideBarOpen');
+    Supplementary.classList.add('SideBarOpen');
+    Medical.classList.add('SideBarOpen');
 }
 function HideIframe() {
     let iFrame_Container = document.getElementById('iframeContainer');
     let iFrame = document.getElementById('brandFrame');
     iFrame.src = null;
     iFrame_Container.style.display = 'none';
-
+    SuperFood.classList.remove('SideBarOpen');
+    Supplementary.classList.remove('SideBarOpen');
+    Medical.classList.remove('SideBarOpen');
 }
 
 
@@ -65,7 +75,10 @@ WAFFENHUND.addEventListener('click', function () {
 PIMOL.addEventListener('click', function () {
     ShowIframe('https://pimol.co.th/ppm/');
 });
-
+// ProductX.addEventListener('click',function()
+// {
+//     ShowIframe('none');
+// })
 
 
 //------------------------------------------------------------------------------------------------- Side Bar
