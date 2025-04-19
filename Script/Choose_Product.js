@@ -1,11 +1,12 @@
 
 
-let WolfiaX = document.getElementById('WolfiaX')
-let NIMNIM = document.getElementById('NIMNIM')
-let KHAOPLAWAAN = document.getElementById('KHAOPLAWAAN')
-let WAFFENHUND = document.getElementById('WAFFENHUND')
-let PIMOL = document.getElementById('PIMOL')
-let House_Button = document.getElementById('House_Button')
+let WolfiaX = document.getElementById('WolfiaX');
+let NIMNIM = document.getElementById('NIMNIM');
+let KHAOPLAWAAN = document.getElementById('KHAOPLAWAAN');
+let WAFFENHUND = document.getElementById('WAFFENHUND');
+let PIMOL = document.getElementById('PIMOL');
+let House_Button = document.getElementById('House_Button');
+let ProductX = document.getElementById('ProductX');
 
 let Tmwta_Logo = document.getElementById('Tmwta_Logo');
 let Amazing_Thailand = document.getElementById('Amazing_Thailand');
@@ -110,6 +111,19 @@ PIMOL.addEventListener('mouseover', function () {
 PIMOL.addEventListener('mouseout', function () {
     console.log("UnSelect Product 5");
     Product_UnActive(PIMOL);
+}
+)
+
+ProductX.addEventListener('mouseover', function () {
+    console.log("Select Product 6");
+    Product_Active(ProductX);
+}
+)
+
+
+ProductX.addEventListener('mouseout', function () {
+    console.log("UnSelect Product 6");
+    Product_UnActive(ProductX);
 }
 )
 

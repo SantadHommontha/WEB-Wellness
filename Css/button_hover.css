@@ -77,6 +77,17 @@
     transform: translateY(-100%);
 }
 
+.Product6 {
+
+    width: 154px;
+    height: 196px;
+
+    position: relative;
+    bottom: -100%;
+    transform: translateY(-100%);
+}
+
+
 
 /* .Image_Button:hover .Default {
     opacity: 0;
