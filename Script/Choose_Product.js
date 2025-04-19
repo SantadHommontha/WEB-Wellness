@@ -16,17 +16,17 @@ let Amazing_Thailand = document.getElementById('Amazing_Thailand');
 
 function Product_Active(Product) {
     if (Is_Side_Bar_Open) return;
-    if(!Product) return;
+    if (!Product) return;
     let allChild = Product.children;
     if (allChild[0]) allChild[0].style.opacity = '0';
     if (allChild[1]) allChild[1].style.opacity = '1';
-   
+
     if (allChild[2]) allChild[2].style.opacity = '1';
 }
 
 function Product_UnActive(Product) {
     let allChild = Product.children;
-    if(!Product) return;
+    if (!Product) return;
     if (allChild[0]) allChild[0].style.opacity = '1';
     if (allChild[1]) allChild[1].style.opacity = '0';
 
@@ -57,64 +57,155 @@ Amazing_Thailand.addEventListener('mouseout', function () {
 )
 
 
+let p1Click = false;
+let p2Click = false;
+let p3Click = false;
+let p4Click = false;
+let p5Click = false;
+
+
+function ClearProduct() {
+    p1Click = false;
+    p2Click = false;
+    p3Click = false;
+    p4Click = false;
+    p5Click = false;
+
+    Product_UnActive(WolfiaX);
+    Product_UnActive(NIMNIM);
+    Product_UnActive(KHAOPLAWAAN);
+    Product_UnActive(WAFFENHUND);
+    Product_UnActive(PIMOL);
+}
 
 WolfiaX.addEventListener('mouseover', function () {
     console.log("Select Product 1");
+    ClearProduct();
     Product_Active(WolfiaX);
+
 }
 )
 WolfiaX.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 1");
-    Product_UnActive(WolfiaX);
+    if (!p1Click) {
+        console.log("UnSelect Product 1");
+        Product_UnActive(WolfiaX);
+    }
+    else {
+        p1Click = false;
+    }
+
 }
 )
+WolfiaX.addEventListener('click', function () {
+    console.log("Click Product 1");
+    Product_Active(WolfiaX);
+    p1Click = true;
+}
+)
+
 
 
 
 NIMNIM.addEventListener('mouseover', function () {
     console.log("Select Product 2");
+    ClearProduct();
     Product_Active(NIMNIM);
 }
 )
 NIMNIM.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 2");
-    Product_UnActive(NIMNIM);
+    if (!p2Click) {
+        console.log("UnSelect Product 2");
+        Product_UnActive(NIMNIM);
+    }
+    else {
+        p2Click = false;
+    }
+
 }
 )
+NIMNIM.addEventListener('click', function () {
+    console.log("Click Product 2");
+    Product_Active(NIMNIM);
+    p2Click = true;
+}
+)
+
 
 
 KHAOPLAWAAN.addEventListener('mouseover', function () {
     console.log("Select Product 3");
+    ClearProduct();
     Product_Active(KHAOPLAWAAN);
 }
 )
 KHAOPLAWAAN.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 3");
-    Product_UnActive(KHAOPLAWAAN);
+    if (!p3Click) {
+        console.log("UnSelect Product 3");
+        Product_UnActive(KHAOPLAWAAN);
+    }
+    else {
+        p3Click = false;
+    }
+
+}
+)
+KHAOPLAWAAN.addEventListener('click', function () {
+    console.log("Click Product 3");
+    Product_Active(KHAOPLAWAAN);
+    p3Click = true;
 }
 )
 
+
 WAFFENHUND.addEventListener('mouseover', function () {
     console.log("Select Product 4");
+    ClearProduct();
     Product_Active(WAFFENHUND);
 }
 )
 WAFFENHUND.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 4");
-    Product_UnActive(WAFFENHUND);
+    if (!p4Click) {
+        console.log("UnSelect Product 4");
+        Product_UnActive(WAFFENHUND);
+    }
+    else {
+        p4Click = false;
+    }
+
+}
+)
+WAFFENHUND.addEventListener('click', function () {
+    console.log("Click Product 4");
+    Product_Active(WAFFENHUND);
+    p4Click = true;
 }
 )
 
+
 PIMOL.addEventListener('mouseover', function () {
     console.log("Select Product 5");
+    ClearProduct();
     Product_Active(PIMOL);
 }
 )
 PIMOL.addEventListener('mouseout', function () {
-    console.log("UnSelect Product 5");
-    Product_UnActive(PIMOL);
+    if (!p5Click) {
+        console.log("UnSelect Product 5");
+        Product_UnActive(PIMOL);
+    }
+    else {
+        p5Click = false;
+    }
+
 }
 )
+PIMOL.addEventListener('click', function () {
+    console.log("Click Product 5");
+    Product_Active(PIMOL);
+    p5Click = true;
+}
+)
+
 
 // ProductX.addEventListener('mouseover', function () {
 //     console.log("Select Product 6");
@@ -132,6 +223,7 @@ PIMOL.addEventListener('mouseout', function () {
 House_Button.addEventListener('mouseover', function () {
     if (Is_Side_Bar_Open) return;
     console.log("Select Product House");
+    ClearProduct();
     let p1_child = House_Button.children;
     p1_child[0].style.opacity = '0';
     p1_child[1].style.opacity = '1';

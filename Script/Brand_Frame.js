@@ -79,7 +79,7 @@ KHAOPLAWAAN.addEventListener('click', function () {
 });
 
 WAFFENHUND.addEventListener('click', function () {
-    ShowIframe('none');
+    ShowIframe('http://www.waffenhund.com/');
 });
 
 PIMOL.addEventListener('click', function () {
