@@ -58,7 +58,7 @@ Tmwta_Logo.addEventListener('click', function () {
 });
 
 Amazing_Thailand.addEventListener('click', function () {
-    ShowIframe("https://tmwta.com/");
+    ShowIframe("none");
 });
 
 
@@ -86,10 +86,10 @@ WAFFENHUND.addEventListener('click', function () {
 PIMOL.addEventListener('click', function () {
     ShowIframe('https://pimol.co.th/ppm/');
 });
-// ProductX.addEventListener('click',function()
-// {
-//     ShowIframe('none');
-// })
+KLONGTOM.addEventListener('click',function()
+{
+    ShowIframe('https://www.wikipedia.org/');
+})
 
 
 //------------------------------------------------------------------------------------------------- Side Bar

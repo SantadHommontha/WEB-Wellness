@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 3%;
     justify-content: center;
     width: 60vw;
     height: 20vh;
@@ -115,7 +115,7 @@ body {
     position: absolute;
     left: 6%;
     top: 65%;
-    width: 50%;
+    width: 55%;
     transform: translateY(-50%);
 
 }
@@ -171,7 +171,7 @@ body {
 .Product_Container .Container .Product .Product_Right {
 
     position: absolute;
-    right: 10%;
+    right: 5%;
 
     bottom: 0;
 
@@ -256,16 +256,33 @@ body {
 
 }
 
+.Product_Buttom_Container .Product_Buttom .L #Super_Food h3
+{
+    position: absolute;
+    top: 0;
+    transform: translateY(25%);
+}
+
+
+
 .Product_Buttom_Container .Product_Buttom .R {
 
     position: absolute;
     left: 50%;
     margin-top: 0%;
-    transform: translateX(-85%);
+    transform: translateX(-70%);
     height: 10vh;
     width: 12vw;
 
 }
+
+.Product_Buttom_Container .Product_Buttom .R #Supplementary h3
+{
+    position: absolute;
+    top: 0;
+    transform: translateY(25%);
+}
+
 
 .Product_Buttom_Container .Product_Buttom .Service_Button {
 
@@ -342,7 +359,7 @@ body {
     font-family: "Geologica", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: #7de9861c;
+    background-color: #0f352783;
     width: 100vw;
     height: 100vh;
 
@@ -408,14 +425,14 @@ body {
     align-items: center;
 }
 
-#EX_Container {}
+
 
 #EX_Container h3 {
     font-size: 1.5em;
     font-family: "Geologica", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #284000;
+    color: #FFEE51;
 }
 
 

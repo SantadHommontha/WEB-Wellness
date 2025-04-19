@@ -6,7 +6,7 @@ let KHAOPLAWAAN = document.getElementById('KHAOPLAWAAN');
 let WAFFENHUND = document.getElementById('WAFFENHUND');
 let PIMOL = document.getElementById('PIMOL');
 let House_Button = document.getElementById('House_Button');
-let ProductX = document.getElementById('ProductX');
+let KLONGTOM = document.getElementById('KLONGTOM');
 
 let Tmwta_Logo = document.getElementById('Tmwta_Logo');
 let Amazing_Thailand = document.getElementById('Amazing_Thailand');
@@ -77,7 +77,7 @@ let p2Click = false;
 let p3Click = false;
 let p4Click = false;
 let p5Click = false;
-
+let p6Click = false;
 
 function ClearProduct() {
     p1Click = false;
@@ -85,12 +85,14 @@ function ClearProduct() {
     p3Click = false;
     p4Click = false;
     p5Click = false;
+    let p6Click = false;
 
     Product_UnActive(WolfiaX);
     Product_UnActive(NIMNIM);
     Product_UnActive(KHAOPLAWAAN);
     Product_UnActive(WAFFENHUND);
     Product_UnActive(PIMOL);
+    Product_UnActive(KLONGTOM);
 }
 
 WolfiaX.addEventListener('mouseover', function () {
@@ -222,18 +224,33 @@ PIMOL.addEventListener('click', function () {
 )
 
 
-// ProductX.addEventListener('mouseover', function () {
-//     console.log("Select Product 6");
-//     Product_Active(ProductX);
-// }
-// )
+KLONGTOM.addEventListener('mouseover', function () {
+    console.log("Select Product 6");
+    ClearProduct();
+    Product_Active(KLONGTOM);
+}
+)
 
 
-// ProductX.addEventListener('mouseout', function () {
-//     console.log("UnSelect Product 6");
-//     Product_UnActive(ProductX);
-// }
-// )
+KLONGTOM.addEventListener('mouseout', function () {
+    console.log("UnSelect Product 6");
+    if (!p6Click) {
+        console.log("UnSelect Product 6");
+        Product_UnActive(KLONGTOM);
+    }
+    else {
+        p6FClick = false;
+    }
+}
+)
+
+KLONGTOM.addEventListener('click', function () {
+    console.log("Click Product 6");
+    Product_Active(KLONGTOM);
+    p6Click = true;
+}
+)
+
 
 House_Button.addEventListener('mouseover', function () {
     if (Is_Side_Bar_Open) return;
@@ -298,7 +315,7 @@ function Supplementary_Select() {
 
     Product_Active(WAFFENHUND,1);
     Product_Active(PIMOL,1);
-    Product_Active(ProductX,1);
+    Product_Active(KLONGTOM,1);
 }
 
 
@@ -308,7 +325,7 @@ function Supplementary_UnSelect() {
 
     Product_UnActive(WAFFENHUND);
     Product_UnActive(PIMOL);
-    Product_UnActive(ProductX)
+    Product_UnActive(KLONGTOM)
 }
 
 

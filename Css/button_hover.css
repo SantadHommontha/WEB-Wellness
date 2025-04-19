@@ -79,13 +79,15 @@
 
 .Product6 {
 
-    width: 154px;
-    height: 196px;
+    width: 95px;
+    height: 230px;
 
     position: relative;
     bottom: -100%;
     transform: translateY(-100%);
 }
+
+
 
 
 
