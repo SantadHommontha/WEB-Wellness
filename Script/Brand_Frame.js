@@ -88,7 +88,7 @@ PIMOL.addEventListener('click', function () {
 });
 KLONGTOM.addEventListener('click',function()
 {
-    ShowIframe('https://www.wikipedia.org/');
+    ShowIframe('https://www.amatayarehab.com/');
 })
 
 
