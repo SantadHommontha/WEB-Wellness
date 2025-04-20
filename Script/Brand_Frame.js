@@ -11,7 +11,7 @@ function ShowIframe(url) {
 
     if (url == "none") return;
     if (iframeShow) return;
-    if (Is_Side_Bar_Open) return;
+    if (Is_Side_Bar_Open ) return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
 
@@ -24,6 +24,25 @@ function ShowIframe(url) {
     Supplementary.classList.add('SideBarOpen');
     Medical.classList.add('SideBarOpen');
 }
+
+function ShowIframe_SideBar(url) {
+
+    if (url == "none") return;
+    if (iframeShow) return;
+   
+    let iFrame = document.getElementById('brandFrame');
+    let iFrame_Container = document.getElementById('iframeContainer');
+
+    iFrame.src = url;
+    iFrame_Container.style.display = 'flex';
+
+    iframeShow = true;
+
+    SuperFood.classList.add('SideBarOpen');
+    Supplementary.classList.add('SideBarOpen');
+    Medical.classList.add('SideBarOpen');
+}
+
 
 
 function HideIframe() {
@@ -101,25 +120,25 @@ let WELLNESS_CLINIC = document.getElementById('WELLNESS_CLINIC');
 
 
 FACILITATORS.addEventListener('click', function () {
-    ShowIframe("https://visitasian.com/");
     SideBarLink = true;
+    ShowIframe_SideBar("https://visitasian.com/");
     console.log("FACILITATORS");
 })
 WELLNESS_ESTATE.addEventListener('click', function () {
-    ShowIframe("https://www.klongtomheritage.com/");
     SideBarLink = true;
+    ShowIframe_SideBar("https://www.klongtomheritage.com/");
     console.log("WELLNESS_ESTATE");
 })
 
 WELLNESS_CENTER.addEventListener('click', function () {
-    ShowIframe("https://mousaiwellness.com/");
     SideBarLink = true;
+    ShowIframe_SideBar("https://mousaiwellness.com/");
     console.log("WELLNESS_CENTER");
 })
 
 WELLNESS_CLINIC.addEventListener('click', function () {
-    ShowIframe("https://www.klosswellnessclinic.com/");
     SideBarLink = true;
+    ShowIframe_SideBar("https://www.klosswellnessclinic.com/");
     console.log("WELLNESS_CLINIC");
 })
 
