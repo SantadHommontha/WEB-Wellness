@@ -105,14 +105,15 @@
     margin-bottom: 0;
     position: relative;
     left: 50%;
-    transform: translateX(-25%);
+    transform: translateX(-30%);
+    font-size: 1.3em;
 
 }
 
 .Service_Button_In .Text h3:nth-child(2) {
     margin-top: 0;
 
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 

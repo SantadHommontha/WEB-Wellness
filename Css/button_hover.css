@@ -34,37 +34,51 @@
     width: 204px;
 
     height: 300px;
-    position: relative;
-    bottom: -100%;
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translateY(-100%); */
+    /* margin-right: 0; */
+
 }
 
 .Product2 {
     width: 174px;
     height: 204px;
 
-    position: relative;
-    bottom: -100%;
-    left: -10%;
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: -0;
+    left: 29%;
+    /* transform: translateY(-100%); */
+
+    margin-right: 0;
+    margin-left: 0;
+
+    /* margin-left: -10%; */
 }
 
 .Product3 {
     width: 174px;
     height: 205px;
+    left: 55%;
+    position: absolute;
 
-    position: relative;
-    bottom: -100%;
-    transform: translateY(-100%);
+    bottom: 0;
+    /* transform: translateY(-100%); */
+
+    /* margin-left: -30%; */
 }
 
 .Product4 {
-    width: 147px;
-    height: 220px;
+    width: 127px;
+    height: 190px;
 
-    position: relative;
-    bottom: -100%;
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translateY(-100%); */
+
+   
 }
 
 .Product5 {
@@ -72,19 +86,25 @@
     width: 154px;
     height: 196px;
 
-    position: relative;
-    bottom: -100%;
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    /* transform: translateY(-100%); */
+
+ 
 }
 
 .Product6 {
 
-    width: 95px;
-    height: 230px;
+    width: 127px;
+    height: 190px;
 
-    position: relative;
-    bottom: -100%;
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    /* transform: translateY(-100%); */
+
+ 
 }
 
 
