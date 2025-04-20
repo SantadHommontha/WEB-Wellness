@@ -13,7 +13,7 @@
 
 #Sidebar.open {
     right: -5vw;
-  
+
 }
 
 .sidebar .Container {
@@ -24,9 +24,8 @@
     flex-direction: column;
     margin: auto;
     gap: 30px;
-    
+
     justify-content: center;
-    /* border: solid purple 1px; */
     align-items: center;
 }
 
@@ -37,9 +36,9 @@
     left: 30%;
 }
 
-.sidebar .Container #Button_Container1 img:nth-child(1){
-   width: 123px;
-   height: 127px;
+.sidebar .Container #Button_Container1 img:nth-child(1) {
+    width: 123px;
+    height: 127px;
 }
 
 
@@ -50,31 +49,31 @@
 }
 
 .sidebar .Container #Button_Container2 .Button_sidebar h3 {
- margin-left: -5%;
+    margin-left: -5%;
 }
 
 
-.sidebar .Container #Button_Container2 img:nth-child(1){
+.sidebar .Container #Button_Container2 img:nth-child(1) {
     width: 110px;
     height: 156px;
-  
- }
- 
 
- .sidebar .Container #Button_Container3 img:nth-child(1){
+}
+
+
+.sidebar .Container #Button_Container3 img:nth-child(1) {
     width: 172px;
     height: 133px;
- }
+}
 
- .sidebar .Container #Button_Container4 img:nth-child(1){
+.sidebar .Container #Button_Container4 img:nth-child(1) {
     width: 70px;
     height: 143px;
     transform: rotateZ(26deg);
-  margin-left: 7%;
-    
- }
- 
- 
+    margin-left: 7%;
+
+}
+
+
 
 
 /* .sidebar .Container #Button_Container1 .G img

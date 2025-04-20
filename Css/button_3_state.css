@@ -84,7 +84,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center center;
 
     padding: auto;
     height: 100%;
@@ -99,6 +99,9 @@
     font-family: "Geologica", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    top: 50%;
+    transform: translateY(-55%);
+    height: 100%;
 }
 
 .Service_Button_In .Text h3:nth-child(1) {

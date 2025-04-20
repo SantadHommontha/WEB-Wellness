@@ -11,6 +11,7 @@ function ShowIframe(url) {
 
     if (url == "none") return;
     if(iframeShow) return;
+    if(Is_Side_Bar_Open) return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
 
@@ -23,6 +24,8 @@ function ShowIframe(url) {
     Supplementary.classList.add('SideBarOpen');
     Medical.classList.add('SideBarOpen');
 }
+
+
 function HideIframe() {
     let iFrame_Container = document.getElementById('iframeContainer');
     let iFrame = document.getElementById('brandFrame');
@@ -57,9 +60,6 @@ Tmwta_Logo.addEventListener('click', function () {
 
 });
 
-Amazing_Thailand.addEventListener('click', function () {
-    ShowIframe("none");
-});
 
 
 
@@ -72,7 +72,7 @@ WolfiaX.addEventListener('click', function () {
 });
 
 NIMNIM.addEventListener('click', function () {
-    ShowIframe('https://www.nimnimnoodle.com/?srsltid=AfmBOooiyCmz0YERHc_A-y-BZjuVQKFwDYArIjGXDZH0q3sqqwRx5CsF');
+    ShowIframe('https://www.nimnimnoodle.com/?srsltid=AfmBOooiyCmz0YERHc_A-y-BZjuVQKFwDYArIjGXDZH0q3sqqwRx5CsF',1);
 });
 
 KHAOPLAWAAN.addEventListener('click', function () {

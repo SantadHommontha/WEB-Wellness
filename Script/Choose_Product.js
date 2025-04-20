@@ -20,11 +20,11 @@ function Product_Active(Product) {
     let allChild = Product.children;
     if (allChild[0]) allChild[0].style.opacity = '0';
     if (allChild[1]) allChild[1].style.opacity = '1';
-
+  //  console.log("1111111111111111111111111111");
     if (allChild[2]) allChild[2].style.opacity = '1';
 }
 
-function Product_Active(Product, b) {
+function Product_Active2(Product) {
     if (Is_Side_Bar_Open) return;
     if (!Product) return;
     let allChild = Product.children;
@@ -33,19 +33,22 @@ function Product_Active(Product, b) {
         allChild[1].src = NewSrc(allChild[1].src);
         allChild[1].style.opacity = '1';
     }
-
+ //   console.log("22222222222222222222222");
     if (allChild[2]) allChild[2].style.opacity = '1';
+    if (allChild[3]) allChild[3].style.opacity = '1';
+
 }
 
 
 function Product_UnActive(Product) {
     if (!Product) return;
     let allChild = Product.children;
-  
+
     if (allChild[0]) allChild[0].style.opacity = '1';
     if (allChild[1]) allChild[1].style.opacity = '0';
 
     if (allChild[2]) allChild[2].style.opacity = '0';
+    if (allChild[3]) allChild[3].style.opacity = '0';
 }
 
 
@@ -296,9 +299,9 @@ function NewSrc(currentSrc) {
 
 function SuperFood_Select() {
 
-    Product_Active(WolfiaX,1);
-    Product_Active(NIMNIM,1);
-    Product_Active(KHAOPLAWAAN,1);
+    Product_Active2(WolfiaX, 1);
+    Product_Active2(NIMNIM, 1);
+    Product_Active2(KHAOPLAWAAN, 1);
 
 }
 
@@ -313,9 +316,9 @@ function SuperFood_UnSelect() {
 
 function Supplementary_Select() {
 
-    Product_Active(WAFFENHUND,1);
-    Product_Active(PIMOL,1);
-    Product_Active(KLONGTOM,1);
+    Product_Active2(WAFFENHUND, 1);
+    Product_Active2(PIMOL, 1);
+    Product_Active2(KLONGTOM, 1);
 }
 
 
