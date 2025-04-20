@@ -10,8 +10,8 @@ let SideBarLink = false;
 function ShowIframe(url) {
 
     if (url == "none") return;
-    if(iframeShow) return;
-    if(Is_Side_Bar_Open) return;
+    if (iframeShow) return;
+    if (Is_Side_Bar_Open) return;
     let iFrame = document.getElementById('brandFrame');
     let iFrame_Container = document.getElementById('iframeContainer');
 
@@ -72,11 +72,12 @@ WolfiaX.addEventListener('click', function () {
 });
 
 NIMNIM.addEventListener('click', function () {
-    ShowIframe('https://www.nimnimnoodle.com/?srsltid=AfmBOooiyCmz0YERHc_A-y-BZjuVQKFwDYArIjGXDZH0q3sqqwRx5CsF',1);
+    ShowIframe('https://www.nimnimnoodle.com/?srsltid=AfmBOooiyCmz0YERHc_A-y-BZjuVQKFwDYArIjGXDZH0q3sqqwRx5CsF', 1);
 });
 
 KHAOPLAWAAN.addEventListener('click', function () {
     ShowIframe('https://neramitfood.tech/');
+    //  ShowIframe('http://linktr.ee/NeramitFoodtech');
 });
 
 WAFFENHUND.addEventListener('click', function () {
@@ -86,8 +87,7 @@ WAFFENHUND.addEventListener('click', function () {
 PIMOL.addEventListener('click', function () {
     ShowIframe('https://pimol.co.th/ppm/');
 });
-KLONGTOM.addEventListener('click',function()
-{
+KLONGTOM.addEventListener('click', function () {
     ShowIframe('https://www.amatayarehab.com/');
 })
 
